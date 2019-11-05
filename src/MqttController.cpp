@@ -41,7 +41,7 @@ void MqttController::callback(const char* topic, const byte* payload, unsigned i
   debugD("MQTT msg received in %s",topic);
     // Make const char* from byte*
   char p_payload[length + 1];
-  for (int i = 0; i < length; i++)
+  for (unsigned int i = 0; i < length; i++)
   {
     p_payload[i] = payload[i];
   }
