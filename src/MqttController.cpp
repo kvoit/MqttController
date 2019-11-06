@@ -18,7 +18,6 @@ void MqttController::reg(MqttListener* ml) {
 void MqttController::subscribe() {
       for(MqttListener* ml : listener) {
           bool subsc_stat = psc.subscribe(ml->getMQTTTopic());
-          debugD("S %s (%d)",ml->getMQTTTopic(),subsc_stat);
       }
 }
 
