@@ -4,6 +4,7 @@
 #include <PubSubClient.h>
 #include <MqttListener.hpp>
 #include <Messenger.hpp>
+#include <vector>
 
 class MqttListener;
 class MqttController : public Messenger{
