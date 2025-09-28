@@ -1,0 +1,27 @@
+{
+  "name": "MqttController",
+  "version": "1.0.0",
+  "description": "A lightweight MQTT controller library.",
+  "keywords": ["mqtt", "controller", "iot"],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kvoit/MqttController.git"
+  },
+  "authors": [
+    {
+      "name": "kvoit",
+      "maintainer": true
+    }
+  ],
+  "frameworks": ["arduino"],
+  "platforms": ["espressif32", "espressif8266", "atmelavr"],
+  "build": {
+    "srcFilter": ["+<*>"],
+    "libArchive": true
+  },
+  "export": {
+    "exclude": [".github", "test", "tests", "examples/*/build", ".vscode"]
+  }
+}
+
